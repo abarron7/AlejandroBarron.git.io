@@ -1,0 +1,172 @@
+header {
+    top: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    margin: 0px;
+    margin-bottom: 20px;
+    height: 60px;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+/*couldn't figure out how to make header fixed and collapse with page*/
+
+h1 {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    margin: auto;
+    background-color: cadetblue;
+    height: 55px;
+    color: white;
+    float: left;
+    font-size: 30pt;
+    width: 365px
+}
+
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h3 {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    margin: auto;
+    float: right;
+    padding-top: 15px;
+    font-size: 16pt
+}
+
+#index:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+#portfolio:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+#contact:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+#me {
+    float: left;
+    width: 250px;
+    height: 300px;
+    word-wrap: normal
+}
+
+#Main {
+    clear: both;
+    height: 450px;
+    width: 980px;
+    margin: auto;
+    width: 50%;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    background-color: #ffffff;
+    text-align: center
+}
+
+p {
+    font-family: Arial, 'Helvetica neue', sans-serif;
+    font-size: 16pt;
+    margin: bottom
+}
+
+h2 {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    float: top;
+    float: left margin-top: auto;
+    color: #4aaaa5
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    background-color: #666666;
+    height: 40px;
+    width: 100%;
+    border-top: 8px solid #4aaaa5;
+}
+
+#head {
+    margin: auto;
+    width: 735px;
+    padding-top: 10px
+}
+
+#inputs {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#Projects {
+    float: left;
+    margin: auto;
+}
+
+#imgtxt {
+    position: relative;
+    background: #4aaaa5;
+    width: 200px;
+    bottom: 45px;
+    height: 25px;
+    padding-top: 10px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+#Main2 {
+    clear: both;
+    height: 520px;
+    width: 980px;
+    margin: auto;
+    width: 50%;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    background-color: #ffffff;
+    text-align: center
+}
