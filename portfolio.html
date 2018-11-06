@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 
-<body background="assets/images/Background.png">
+<body background="assets/images/Background.png" style="min-height: 720px;">
     <header>
         <div id="head">
             <h1>Alejandro Barron</h1>
@@ -20,13 +20,21 @@
             </h3>
         </div>
     </header>
-    <div id="Main">
+    <div id="Main" class="container">
         <h2>Portfolio</h2>
         <hr>
         <div id="Projects">
-            <a href="">
-                <img href="https://abarron7.github.io/AlejandroBarron.git.io/index.html" src="assets/images/Home.jpg" alt="127.0.0.1" style="width:200px;height:150px;border:0;">
-                <div id="imgtxt">HomePage</div>
+            <a href="https://abarron7.github.io/AlejandroBarron.git.io/index.html">
+                <div class="container boxes" id="indv-project">
+                    <img src="assets/images/Home.jpg" alt="127.0.0.1" style="width:200px;height:150px;border:0;">
+                    <div class="centered" id="imgtxt">HomePage</div>
+                </div>
+            </a>
+            <a href="https://abarron7.github.io/GIFTastic/">
+                <div class="container boxes" id="indv-project">
+                    <img src="assets/images/Giphy.jpg" alt="video game gifs" style="width:200px;height:150px;border:0;">
+                    <div class="centered" id="imgtxt">Video Game Gifs</div>
+                </div>
             </a>
         </div>
     </div>
