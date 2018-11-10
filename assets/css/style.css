@@ -11,8 +11,6 @@ header {
     margin-right: -8px;
 }
 
-/*couldn't figure out how to make header fixed and collapse with page*/
-
 h1 {
     font-family: 'Georgia', 'Times New Roman', Times, serif;
     margin: auto;
