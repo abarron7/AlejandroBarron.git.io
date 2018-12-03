@@ -126,8 +126,7 @@ textarea {
 }
 
 #Projects {
-    float: left;
-    margin: auto;
+   margin-left: 60px
 }
 
 input[type=submit] {
