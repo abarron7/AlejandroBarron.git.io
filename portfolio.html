@@ -6,57 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
     <title>Alejandro Barron's Website</title>
 </head>
 
 <body background="assets/images/Background.png" style="min-height: 720px;">
-    <header class="container">
-        <div id="head">
-            <h1>Alejandro Barron</h1>
-            <h3>
-                <a id="index" href="index.html">About</a>
-                <a id="portfolio" href="portfolio.html">Portfolio</a>
-                <a id="contact" href="contact.html">Contact</a>
-            </h3>
+    <div id="header" class="header">
+        <div id="head" class="container">
+            <div id="name">
+                <h1>Alejandro Barron</h1>
+            </div>
+            <div id="pages">
+                <h3>
+                    <a id="index" href="index.html">About</a>
+                    <a id=portfolio href="portfolio.html">Portfolio</a>
+                    <a id=contact href="contact.html">Contact</a>
+                </h3>
+            </div>
         </div>
-    </header>
+    </div>
     <div id="Main" class="container">
         <h2>Portfolio</h2>
         <hr>
-        <div id="Projects">
-            <a href="https://abarron7.github.io/AlejandroBarron.git.io/index.html">
-                <div class="container boxes" id="indv-project">
-                    <img src="assets/images/Home.jpg" alt="127.0.0.1" style="width:200px;height:200px;border:0;">
-                    <div class="centered" id="imgtxt">HomePage</div>
-                </div>
-            </a>
-            <a href="https://abarron7.github.io/Word-Guess-Game/">
-                <div class="container boxes" id="indv-project">
-                    <img src="assets/images/psychic.jpg" alt="psychic" style="width:200px;height:200px;border:0;">
-                    <div class="centered" id="imgtxt">Psychic: Letter Game</div>
-                </div>
-            </a>
-            <a href="https://abarron7.github.io/unit-4-game/">
-                <div class="container boxes" id="indv-project">
-                    <img src="https://usercontent2.hubstatic.com/13975493_f496.jpg" alt="crystal" style="width:200px;height:200px;border:0;">
-                    <div class="centered" id="imgtxt">Crystals Game</div>
-                </div>
-            </a>
-            <a href="https://abarron7.github.io/GIFTastic/">
-                <div class="container boxes" id="indv-project">
-                    <img src="assets/images/Cortana.gif" alt="video game gifs" style="width:200px;height:200px;border:0;">
-                    <div class="centered" id="imgtxt">Video Game Gifs</div>
-                </div>
-            </a>
-            <a href="https://abarron7.github.io/ChooChew-on-this/">
-                <div class="container boxes" id="indv-project">
-                    <img src="assets/images/train.jpeg" alt="train schedule" style="width:200px;height:200px;border:0;">
-                    <div class="centered" id="imgtxt">Train Schedule</div>
-                </div>
-            </a>
+        <div id="Projects" >
+            <div id="indv-project">
+                <a href="https://abarron7.github.io/AlejandroBarron.git.io/index.html">
+                    <div class="container" id="design">
+                        <img id='projPic' src="assets/images/Home.jpg" alt="127.0.0.1">
+                        <p class="text-block" id="imgtxt">HomePage</p>
+                    </div>
+                </a>
+            </div>
+            <div id="indv-project">
+                <a href="https://abarron7.github.io/Word-Guess-Game/">
+                    <div class="container" id="design">
+                        <img id='projPic' src="assets/images/psychic.jpg" alt="psychic">
+                        <div id="imgtxt" class="text-block">Psychic: Letter Game</div>
+                    </div>
+                </a>
+            </div>
+            <div id="indv-project">
+                <a href="https://abarron7.github.io/unit-4-game/">
+                    <div class="container" id="design">
+                        <img id='projPic' src="https://usercontent2.hubstatic.com/13975493_f496.jpg" alt="crystal">
+                        <div class="centered" id="imgtxt">Crystals Game</div>
+                    </div>
+                </a>
+            </div>
+            <div id="indv-project">
+                <a href="https://abarron7.github.io/GIFTastic/">
+                    <div class="container" id="design">
+                        <img id='projPic' src="assets/images/Cortana.gif" alt="video game gifs">
+                        <div class="centered" id="imgtxt">Video Game Gifs</div>
+                    </div>
+                </a>
+            </div>
+            <div id="indv-project">
+                <a href="https://abarron7.github.io/ChooChew-on-this/">
+                    <div class="container" id="design">
+                        <img id='projPic' src="assets/images/train.jpeg" alt="train schedule">
+                        <div class="centered" id="imgtxt">Train Schedule</div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
-    <footer></footer>
+    <div class="footer"></div>
 </body>
 
 </html>

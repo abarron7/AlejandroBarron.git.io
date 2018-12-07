@@ -1,59 +1,40 @@
-header {
-    top: 0;
-    overflow: hidden;
-    background-color: #ffffff;
-    border-bottom: 2px solid #cccccc;
-    margin: 0px;
-    margin-bottom: 20px;
-    height: 60px;
-    margin-top: -8px;
-    margin-left: -8px;
-    margin-right: -8px;
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
-h1 {
+#header {
+    background-color: whitesmoke;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    margin-bottom: 12px;
+
+}
+
+#head {
+    overflow: hidden;
+    max-width: 980px;
+    position: center;
+    overflow: hidden;
+}
+
+#pages {
+    overflow: hidden;
+    height: 100%;
+
+}
+
+#name {
     font-family: 'Georgia', 'Times New Roman', Times, serif;
     margin: auto;
     background-color: cadetblue;
-    height: 55px;
     color: white;
     float: left;
-    font-size: 30pt;
-    width: 365px
-}
-
-a,
-a:link,
-a:visited,
-a:focus,
-a:hover,
-a:active {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-h3 {
-    font-family: 'Georgia', 'Times New Roman', Times, serif;
-    margin: auto;
-    float: right;
-    padding-top: 15px;
-    font-size: 16pt
-}
-
-#index:hover {
-    background-color: cadetblue;
-    color: white;
-}
-
-#portfolio:hover {
-    background-color: cadetblue;
-    color: white;
-}
-
-#contact:hover {
-    background-color: cadetblue;
-    color: white;
+    overflow: hidden;
 }
 
 #me {
@@ -66,28 +47,81 @@ h3 {
 #Main {
     clear: both;
     width: 980px;
-    min-height: 575px;
+    height: 100%;
     margin: auto;
+    width: 50%;
     border: 1px solid #dddddd;
     padding: 2px;
-    background-color: #ffffff;
+    background-color: whitesmoke;
     text-align: center;
+    overflow: hidden;
 }
+
+#Projects {
+    height: 100%;
+    text-align: center;
+    color: white;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#indv-project {
+    float: left;
+    max-width: 200px;
+    max-height: 200px;
+    border: 0;
+    margin: 5px;
+}
+#projPic{
+    width: 200px;
+    height: 200px;
+}
+#imgtxt {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #4aaaa5;
+    width: 200px;
+    bottom: 45px;
+    height: 30px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#design {
+    width: 200px;
+    height: 200px;
+    border: 0;
+    padding: 0px;
+}
+
+#Main2 {
+    clear: both;
+    height: 100%;
+    max-width: 980px;
+    margin: auto;
+    width: 50%;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+    overflow: hidden;
+}
+
+
 
 p {
     font-family: Arial, 'Helvetica neue', sans-serif;
     font-size: 16pt;
-    margin: bottom
+    margin: bottom;
 }
 
 h2 {
     font-family: 'Georgia', 'Times New Roman', Times, serif;
-    float: top;
-    float: left margin-top: auto;
     color: #4aaaa5
 }
 
-footer {
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -97,14 +131,9 @@ footer {
     text-align: center;
     background-color: #666666;
     height: 40px;
-    width: 100%;
     border-top: 8px solid #4aaaa5;
-}
-
-#head {
-    margin: auto;
-    width: 735px;
-    padding-top: 10px
+    margin-top: 10px;
+    overflow: hidden;
 }
 
 #inputs {
@@ -121,12 +150,7 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom: 16px;
     resize: vertical;
-}
-
-#Projects {
-   margin-left: 60px
 }
 
 input[type=submit] {
@@ -139,40 +163,34 @@ input[type=submit] {
     float: left;
 }
 
-#Main2 {
-    clear: both;
-    height: 520px;
-    width: 980px;
-    margin: auto;
-    width: 50%;
-    border: 1px solid #dddddd;
-    padding: 10px;
-    background-color: #ffffff;
-    text-align: center
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.container {
-    position: relative;
-    text-align: center;
+h3 {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    float: right;
+    font-size: 16pt
+}
+
+#index:hover {
+    background-color: cadetblue;
     color: white;
-    overflow: hidden;
 }
 
-.centered {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #4aaaa5;
-    width: 200px;
-    bottom: 45px;
-    height: 25px;
-    padding-top: 10px;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+#portfolio:hover {
+    background-color: cadetblue;
+    color: white;
 }
 
-.boxes {
-    float: left;
-    margin: 5px
+#contact:hover {
+    background-color: cadetblue;
+    color: white;
 }
