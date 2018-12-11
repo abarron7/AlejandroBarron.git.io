@@ -1,19 +1,43 @@
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
 
 #header {
-    background-color: whitesmoke;
-    width: 100%;
-    margin: 0px;
     padding: 0px;
     overflow: hidden;
     margin-bottom: 12px;
-
+    z-index: 2;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #222;
+    color: white;
 }
+
+#header h1 {
+    padding-top: 17px;
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+#pages {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    height: 60px;
+    
+}
+
+#pages ul li {
+    float: left;
+    list-style: none;
+}
+
+#pages ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
 
 #head {
     overflow: hidden;
@@ -22,19 +46,25 @@ body {
     overflow: hidden;
 }
 
-#pages {
-    overflow: hidden;
-    height: 100%;
-
-}
-
-#name {
+#Name {
     font-family: 'Georgia', 'Times New Roman', Times, serif;
     margin: auto;
-    background-color: cadetblue;
-    color: white;
-    float: left;
-    overflow: hidden;
+    width: 100%;
+    border-color: #7f8083;
+}
+
+#Email {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    margin: auto;
+    width: 100%;
+    border-color: #7f8083;
+}
+
+#Message {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    margin: auto;
+    width: 100%;
+    border-color: #7f8083;
 }
 
 #me {
@@ -45,20 +75,16 @@ body {
 }
 
 #Main {
-    clear: both;
+    min-height: 100%;
     width: 980px;
-    height: 100%;
-    margin: auto;
     width: 50%;
-    border: 1px solid #dddddd;
+    border: 2px solid #7f8083;
     padding: 2px;
-    background-color: whitesmoke;
+    background-color: #65666a;
     text-align: center;
-    overflow: hidden;
 }
 
 #Projects {
-    height: 100%;
     text-align: center;
     color: white;
     padding: 0px;
@@ -72,15 +98,17 @@ body {
     border: 0;
     margin: 5px;
 }
-#projPic{
+
+#projPic {
     width: 200px;
     height: 200px;
 }
+
 #imgtxt {
     position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #4aaaa5;
+    background: rgb(15, 126, 255);
     width: 200px;
     bottom: 45px;
     height: 30px;
@@ -96,44 +124,40 @@ body {
 }
 
 #Main2 {
-    clear: both;
-    height: 100%;
     max-width: 980px;
-    margin: auto;
     width: 50%;
-    border: 1px solid #dddddd;
+    border: 2px solid #7f8083;
     padding: 10px;
-    background-color: whitesmoke;
+    background-color: #65666a;
     text-align: center;
-    overflow: hidden;
 }
 
-
-
+#submit{
+    background-color: rgb(15, 126, 255);
+    color: #222;
+}
+button:active{
+    background-color: rgb(15, 126, 255)
+}
 p {
     font-family: Arial, 'Helvetica neue', sans-serif;
     font-size: 16pt;
     margin: bottom;
+    color: whitesmoke;
 }
 
 h2 {
     font-family: 'Georgia', 'Times New Roman', Times, serif;
-    color: #4aaaa5
+    color: rgb(15, 126, 255);
 }
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
-    background-color: #666666;
-    height: 40px;
-    border-top: 8px solid #4aaaa5;
+    background: #222;
+    height: 50px;
+    border-top: 8px solid rgb(15, 126, 255);
     margin-top: 10px;
-    overflow: hidden;
+    position: absolute;
 }
 
 #inputs {
@@ -154,7 +178,7 @@ textarea {
 }
 
 input[type=submit] {
-    background-color: #4aaaa5;
+    background-color: rgb(15, 126, 255);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -180,17 +204,77 @@ h3 {
     font-size: 16pt
 }
 
-#index:hover {
-    background-color: cadetblue;
-    color: white;
+#index:hover { 
+    color: rgb(15, 126, 255);;
 }
 
 #portfolio:hover {
-    background-color: cadetblue;
-    color: white;
+    color: rgb(15, 126, 255);;
 }
 
 #contact:hover {
-    background-color: cadetblue;
-    color: white;
+    color: rgb(15, 126, 255);;
+}
+
+@media (max-width: 576px) {
+    #header .container {
+        width: 100%;
+    }
+
+    #header h1 {
+        padding-left: 3%;
+    }
+
+    #pages {
+        width: 100%;
+        top: 60px;
+    }
+
+    #pages:before {
+        content: '\2630';
+        display: block;
+        position: absolute;
+        right: 3%;
+        top: -50px;
+        line-height: 40px;
+        font-size: 1.4em;
+        cursor: pointer;
+    }
+
+    #pages ul {
+        background: #222;
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 12px;
+    }
+
+    #pages ul li {
+        float: none;
+    }
+
+    #pages ul li a {
+        padding: 10px 3%;
+        line-height: 20px;
+        border-top: 1px solid #333;
+    }
+}
+
+::placeholder {
+    color: whitesmoke;
+}
+
+input::placeholder {
+    color: whitesmoke;
+}
+.form-group {
+    color: whitesmoke;
+}
+#html{
+    height: 100%;
+    padding: 0px;
+}
+#body{
+    min-height: 100%;
+    margin: 0%;
+    position: relative;
 }
