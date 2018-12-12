@@ -69,19 +69,19 @@
 
 #me {
     float: left;
-    width: 240px;
-    height: 300px;
-    word-wrap: normal
+    max-width: 240px;
+    max-height: 300px;
+    word-wrap: normal;
 }
 
 #Main {
-    min-height: 100%;
-    width: 980px;
-    width: 50%;
+    min-height: 550px;
+    max-width: 980px;
     border: 2px solid #7f8083;
     padding: 2px;
     background-color: #65666a;
     text-align: center;
+    margin: auto;
 }
 
 #Projects {
@@ -125,11 +125,12 @@
 
 #Main2 {
     max-width: 980px;
-    width: 50%;
     border: 2px solid #7f8083;
     padding: 10px;
     background-color: #65666a;
     text-align: center;
+    margin: auto;
+    max-height: 600px;
 }
 
 #submit{
@@ -141,7 +142,7 @@ button:active{
 }
 p {
     font-family: Arial, 'Helvetica neue', sans-serif;
-    font-size: 16pt;
+    font-size: 20pt;
     margin: bottom;
     color: whitesmoke;
 }
@@ -151,13 +152,14 @@ h2 {
     color: rgb(15, 126, 255);
 }
 
-.footer {
+#footer {
     width: 100%;
     background: #222;
-    height: 50px;
+    height: 40px;
     border-top: 8px solid rgb(15, 126, 255);
     margin-top: 10px;
-    position: absolute;
+    position: fixed;
+    bottom: 0px;
 }
 
 #inputs {
@@ -278,3 +280,14 @@ input::placeholder {
     margin: 0%;
     position: relative;
 }
+.page-wrap {
+    min-height: 100%;
+    margin-bottom: -58px; 
+  }
+  .page-wrap:after {
+    content: "";
+    display: block;
+  }
+  .site-footer, .page-wrap:after {
+    height: 142px; 
+  }
