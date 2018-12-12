@@ -87,8 +87,9 @@
 #Projects {
     text-align: center;
     color: white;
-    padding: 0px;
+    padding-left: 65px;
     overflow: hidden;
+
 }
 
 #indv-project {
