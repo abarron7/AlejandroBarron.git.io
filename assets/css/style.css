@@ -162,6 +162,7 @@ nav {
 	font-size:20px;
     line-height: 60px;
     color: whitesmoke;
+    text-transform: uppercase;
 }
 .toggle,
 [id^=drop] {
