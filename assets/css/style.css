@@ -28,6 +28,7 @@
 }
 
 #Main {
+    left: 50%;
     min-height: 550px;
     max-width: 980px;
     border: 2px solid #7f8083;
@@ -42,7 +43,8 @@
     color: white;
     padding-left: 65px;
     overflow: hidden;
-
+    top: 50%;
+    left: 50%;
 }
 
 #indv-project {
@@ -365,4 +367,16 @@ input::placeholder {
   }
   .site-footer, .page-wrap:after {
     height: 42px; 
+  }
+  #profile {
+    font-size: 23px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  #profile a {
+    font-size: 23px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
   }
