@@ -1,3 +1,4 @@
+//add to .env
 var config = {
     apiKey: "AIzaSyCvTHHlDjDZMLWYrM2RnsvyDENjcfM8Ks4",
     authDomain: "contactportofolio.firebaseapp.com",
