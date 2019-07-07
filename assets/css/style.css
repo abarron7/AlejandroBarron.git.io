@@ -374,7 +374,8 @@ input::placeholder {
 }
 
 body {
-    background: #ddd;
+    background: url("/assets/images/Background.png") no-repeat center center;
+    background-size: cover;
     padding-bottom: 45px;
 }
 
