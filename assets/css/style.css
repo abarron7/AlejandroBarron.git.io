@@ -28,7 +28,7 @@
 }
 
 #Main {
-    max-width: 980px;
+    max-width: 965px;
     border: 2px solid #7f8083;
     padding: 2px;
     background-color: #65666a;
@@ -44,7 +44,7 @@
 
 
 #projPic {
-    width: 200px;
+    width: 230px;
     height: 200px;
 }
 .card-body {
