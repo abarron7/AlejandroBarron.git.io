@@ -24,6 +24,7 @@
     max-width: 240px;
     max-height: 300px;
     word-wrap: normal;
+    margin: 5px;
 }
 
 #Main {
@@ -31,6 +32,7 @@
     border: 2px solid #7f8083;
     padding: 2px;
     background-color: #65666a;
+    margin: auto;
 }
 #Main h2 {
   text-align: center;
@@ -374,7 +376,7 @@ input::placeholder {
 }
 
 body {
-    background: url("/assets/images/Background.png") no-repeat center center;
+    background: url("../images/Background.png") no-repeat center center;
     background-size: cover;
     padding-bottom: 45px;
 }
