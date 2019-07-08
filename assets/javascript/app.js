@@ -9,13 +9,18 @@ var config = {
 };
 firebase.initializeApp(config);
 var database = firebase.database();
-
 $("#submit").on('click', function (event) {
     event.preventDefault();
     var name = $('#Name').val().trim();
     var email = $('#Email').val().trim();
     var message = $('#Message').val().trim();
-
+    if (name,email,message == "") {
+        alert("Please fill out your name");
+    } if (email == "") {
+        alert("Please fill out your email");
+    } if (message == "") {  
+        alert("Please fill out your message");
+    } else {
     var newMessage = {
         name: name,
         email: email,
@@ -30,7 +35,7 @@ $("#submit").on('click', function (event) {
     $('#Name').val("");
     $('#Email').val("");
     $('#Message').val("");
-    
+    }
 });
 database.ref().on("child_added", function (childSnapshot) {
     console.log(childSnapshot.val().name);

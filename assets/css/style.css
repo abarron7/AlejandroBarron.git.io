@@ -28,14 +28,15 @@
 }
 
 #Main {
-    max-width: 965px;
+    max-width: 945px;
     border: 2px solid #7f8083;
     padding: 2px;
     background-color: #65666a;
     margin: auto;
 }
+
 #Main h2 {
-  text-align: center;
+    text-align: center;
 }
 
 #Projects {
@@ -44,16 +45,24 @@
 
 
 #projPic {
-    width: 230px;
+    width: 225px;
     height: 200px;
 }
+
 .card-body {
-  background-color: #65666a;
+    background-color: #65666a;
 }
+
 .card {
-  display: inline-block;
-  margin: 2px;
-  border-color: rgb(15, 126, 255);
+    width: 14.1943rem;
+    display: inline-block;
+    margin: 2px;
+    margin-bottom: 6px;
+    border-color: rgb(15, 126, 255);
+}
+
+#imgtxt a {
+    color: black;
 }
 
 #Main2 {
@@ -64,6 +73,7 @@
     text-align: center;
     margin: auto;
     min-height: 550px;
+    text-align: center;
 }
 
 #submit {
