@@ -28,11 +28,29 @@
 }
 
 #Main {
+    /* max-width: 980px; */
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, 200px); */
+    grid-gap: 10px;
+    justify-content: center;
+    border: 2px solid #7f8083;
+    padding: 2px;
+    background-color: #65666a;
+    margin: auto;
+}
+
+#Main1 {
     max-width: 945px;
     border: 2px solid #7f8083;
     padding: 2px;
     background-color: #65666a;
     margin: auto;
+    text-align: center;
+}
+
+hr {
+    height: 3px;
+    width: 100%
 }
 
 #Main h2 {
@@ -45,7 +63,7 @@
 
 
 #projPic {
-    width: 225px;
+    /* width: 225px; */
     height: 200px;
 }
 
@@ -54,9 +72,12 @@
 }
 
 .card {
-    width: 14.1943rem;
-    display: inline-block;
-    margin: 2px;
+    text-align: center;
+    /* position: inherit; */
+    /* width: 14.1943rem; */
+    width: 18rem;
+    /* display: inline-block; */
+    margin: auto;
     margin-bottom: 6px;
     border-color: rgb(15, 126, 255);
 }
