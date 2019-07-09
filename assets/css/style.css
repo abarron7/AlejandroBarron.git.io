@@ -366,20 +366,14 @@ input::placeholder {
     color: whitesmoke;
 }
 
-#html {
-    height: 100%;
+html {
+    min-height: 100%;
     padding: 0px;
 }
 
-#body {
-    min-height: 100%;
-    margin: 0%;
-    position: relative;
-}
 
 .page-wrap {
     min-height: 100%;
-    margin-bottom: -58px;
 }
 
 .page-wrap:after {
@@ -410,6 +404,7 @@ body {
     background: url("../images/Background.png") no-repeat center center;
     background-size: cover;
     padding-bottom: 45px;
+    min-height: 100%;
 }
 
 .wrapper>div {
