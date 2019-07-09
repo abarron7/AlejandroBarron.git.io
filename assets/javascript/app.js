@@ -14,20 +14,30 @@ $("#submit").on('click', function (event) {
     var name = $('#Name').val().trim();
     var email = $('#Email').val().trim();
     var message = $('#Message').val().trim();
-    if (name,email,message == "") {
-        alert("Please fill out your name");
-    } if (email == "") {
-        alert("Please fill out your email");
-    } if (message == "") {  
-        alert("Please fill out your message");
-    } else {
-    var newMessage = {
+     name == "" ? alert("Please fill out your name")
+    : email == "" ? alert("Please fill out your email")
+    : message == "" ? alert("Please fill out your message")
+    :   newMessage = {
         name: name,
         email: email,
         message: message,
         dateAdded: firebase.database.ServerValue.TIMESTAMP
     };
-
+    
+    // if (name == "") {
+    //     alert("Please fill out your name");
+    // } else if (email == "") {
+    //     alert("Please fill out your email");
+    // } else if (message == "") {  
+    //     alert("Please fill out your message");
+    // } else {
+    // var newMessage = {
+    //     name: name,
+    //     email: email,
+    //     message: message,
+    //     dateAdded: firebase.database.ServerValue.TIMESTAMP
+    // };
+    
     database.ref().push(newMessage);
 
     alert("Thank you, we'll be in touch.");
@@ -35,13 +45,15 @@ $("#submit").on('click', function (event) {
     $('#Name').val("");
     $('#Email').val("");
     $('#Message').val("");
-    }
+    // }
+    console.log = function(){};
 });
-database.ref().on("child_added", function (childSnapshot) {
-    console.log(childSnapshot.val().name);
-    console.log(childSnapshot.val().email);
-    console.log(childSnapshot.val().message);
-    console.log(childSnapshot.val().dateAdded);
-}, function (errorObject) {
-    console.log("Errors handled: " + errorObject.code);
-});
+
+// database.ref().on("child_added", function (childSnapshot) {
+//     console.log(childSnapshot.val().name);
+//     console.log(childSnapshot.val().email);
+//     console.log(childSnapshot.val().message);
+//     console.log(childSnapshot.val().dateAdded);
+// }, function (errorObject) {
+//     console.log("Errors handled: " + errorObject.code);
+// });
