@@ -143,6 +143,7 @@ textarea {
     box-sizing: border-box;
     margin-top: 6px;
     resize: vertical;
+    cursor: default;
 }
 
 input[type=submit] {
@@ -360,6 +361,10 @@ li>a:only-child:after {
 
 input::placeholder {
     color: whitesmoke;
+}
+
+input{
+    cursor: default;
 }
 
 .form-group {
